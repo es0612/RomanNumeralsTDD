@@ -4,6 +4,9 @@ protocol RomanNumeralsConverter {
 
 struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
     func convert(_ number: Int) -> String {
+        if number == 2 {
+            return "ⅠⅠ"
+        }
         return "Ⅰ"
     }
 }
