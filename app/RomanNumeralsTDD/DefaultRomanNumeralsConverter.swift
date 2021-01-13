@@ -4,9 +4,14 @@ protocol RomanNumeralsConverter {
 
 struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
     func convert(_ number: Int) -> String {
-        if number == 2 {
-            return "ⅠⅠ"
+        var workingNumber = number
+        var result = ""
+
+        while workingNumber > 0 {
+            result += "Ⅰ"
+            workingNumber -= 1
         }
-        return "Ⅰ"
+
+        return result
     }
 }
