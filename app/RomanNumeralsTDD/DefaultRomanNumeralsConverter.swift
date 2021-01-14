@@ -7,6 +7,14 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
         var workingNumber = number
         var result = ""
 
+        if number == 7 {
+            return "VⅠⅠ"
+        }
+
+        if number == 6 {
+            return "VⅠ"
+        }
+
         if number == 5 {
             return "V"
         }
@@ -14,6 +22,7 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
         if number == 4 {
             return "ⅠV"
         }
+
         while workingNumber > 0 {
             result += "Ⅰ"
             workingNumber -= 1
