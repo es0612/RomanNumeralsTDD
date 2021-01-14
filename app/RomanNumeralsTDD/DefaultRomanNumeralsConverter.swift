@@ -27,7 +27,7 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
             workingNumber -= 400
         }
 
-        if workingNumber >= 100 {
+        while workingNumber >= 100 {
             result += "C"
             workingNumber -= 100
         }

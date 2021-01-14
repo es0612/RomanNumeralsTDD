@@ -143,4 +143,8 @@ class RomanNumeralsTDDTests: XCTestCase {
     func testOneThousand() {
         XCTAssertEqual(converter.convert(1000), "M")
     }
+
+    func testOneThousandNineHundredNintyNine() {
+        XCTAssertEqual(converter.convert(1888), "MDCCCLXXXVIII")
+    }
 }
