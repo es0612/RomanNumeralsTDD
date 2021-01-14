@@ -12,17 +12,17 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
             workingNumber -= 1000
         }
 
-        if workingNumber >= 900 {
+        while workingNumber >= 900 {
             result += "CM"
             workingNumber -= 900
         }
         
-        if workingNumber >= 500 {
+        while workingNumber >= 500 {
             result += "D"
             workingNumber -= 500
         }
 
-        if workingNumber >= 400 {
+        while workingNumber >= 400 {
             result += "CD"
             workingNumber -= 400
         }
@@ -32,17 +32,17 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
             workingNumber -= 100
         }
 
-        if workingNumber >= 90 {
+        while workingNumber >= 90 {
             result += "XC"
             workingNumber -= 90
         }
 
-        if workingNumber >= 50 {
+        while workingNumber >= 50 {
             result += "L"
             workingNumber -= 50
         }
 
-        if workingNumber >= 40 {
+        while workingNumber >= 40 {
             result += "XL"
             workingNumber -= 40
         }
@@ -52,17 +52,17 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
             workingNumber -= 10
         }
 
-        if workingNumber >= 9 {
+        while workingNumber >= 9 {
             result += "IX"
             workingNumber -= 9
         }
 
-        if workingNumber >= 5 {
+        while workingNumber >= 5 {
             result += "V"
             workingNumber -= 5
         }
 
-        if workingNumber >= 4 {
+        while workingNumber >= 4 {
             result += "IV"
             workingNumber -= 4
         }
