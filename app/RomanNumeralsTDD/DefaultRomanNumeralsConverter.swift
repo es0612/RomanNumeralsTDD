@@ -7,6 +7,10 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
         var workingNumber = number
         var result = ""
 
+        if number == 5 {
+            return "V"
+        }
+
         if number == 4 {
             return "ⅠV"
         }

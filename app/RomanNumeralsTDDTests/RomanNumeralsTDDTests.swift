@@ -27,4 +27,8 @@ class RomanNumeralsTDDTests: XCTestCase {
     func testFour() {
         XCTAssertEqual(converter.convert(4), "ⅠV")
     }
+
+    func testFive() {
+        XCTAssertEqual(converter.convert(5), "V")
+    }
 }
