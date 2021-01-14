@@ -7,6 +7,26 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
         var workingNumber = number
         var result = ""
 
+        if workingNumber >= 1000 {
+            result += "M"
+            workingNumber -= 1000
+        }
+
+        if workingNumber >= 900 {
+            result += "CM"
+            workingNumber -= 900
+        }
+        
+        if workingNumber >= 500 {
+            result += "D"
+            workingNumber -= 500
+        }
+
+        if workingNumber >= 400 {
+            result += "CD"
+            workingNumber -= 400
+        }
+
         if workingNumber >= 100 {
             result += "C"
             workingNumber -= 100

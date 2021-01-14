@@ -123,4 +123,24 @@ class RomanNumeralsTDDTests: XCTestCase {
     func testOneHundred() {
         XCTAssertEqual(converter.convert(100), "C")
     }
+
+    func testFourHundred() {
+        XCTAssertEqual(converter.convert(400), "CD")
+    }
+
+    func testFourHundredTwentySix() {
+        XCTAssertEqual(converter.convert(426), "CDXXVI")
+    }
+
+    func testFiveHundred() {
+        XCTAssertEqual(converter.convert(500), "D")
+    }
+
+    func testNineHundred() {
+        XCTAssertEqual(converter.convert(900), "CM")
+    }
+
+    func testOneThousand() {
+        XCTAssertEqual(converter.convert(1000), "M")
+    }
 }
