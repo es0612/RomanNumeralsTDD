@@ -7,13 +7,22 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
         var workingNumber = number
         var result = ""
 
+        if workingNumber >= 100 {
+            result += "C"
+            workingNumber -= 100
+        }
+
+        if workingNumber >= 90 {
+            result += "XC"
+            workingNumber -= 90
+        }
 
         if workingNumber >= 50 {
             result += "L"
             workingNumber -= 50
         }
 
-        if workingNumber == 40 {
+        if workingNumber >= 40 {
             result += "XL"
             workingNumber -= 40
         }
@@ -23,8 +32,8 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
             workingNumber -= 10
         }
 
-        if workingNumber == 9 {
-            result += "ⅠX"
+        if workingNumber >= 9 {
+            result += "IX"
             workingNumber -= 9
         }
 
@@ -33,13 +42,13 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
             workingNumber -= 5
         }
 
-        if workingNumber == 4 {
-            result += "ⅠV"
+        if workingNumber >= 4 {
+            result += "IV"
             workingNumber -= 4
         }
 
         while workingNumber > 0 {
-            result += "Ⅰ"
+            result += "I"
             workingNumber -= 1
         }
 

@@ -13,19 +13,19 @@ class RomanNumeralsTDDTests: XCTestCase {
     }
 
     func testOne() {
-        XCTAssertEqual(converter.convert(1), "Ⅰ")
+        XCTAssertEqual(converter.convert(1), "I")
     }
 
     func testTwo() {
-        XCTAssertEqual(converter.convert(2), "ⅠⅠ")
+        XCTAssertEqual(converter.convert(2), "II")
     }
 
     func testThree() {
-        XCTAssertEqual(converter.convert(3), "ⅠⅠⅠ")
+        XCTAssertEqual(converter.convert(3), "III")
     }
 
     func testFour() {
-        XCTAssertEqual(converter.convert(4), "ⅠV")
+        XCTAssertEqual(converter.convert(4), "IV")
     }
 
     func testFive() {
@@ -33,19 +33,19 @@ class RomanNumeralsTDDTests: XCTestCase {
     }
 
     func testSix() {
-        XCTAssertEqual(converter.convert(6), "VⅠ")
+        XCTAssertEqual(converter.convert(6), "VI")
     }
 
     func testSeven() {
-        XCTAssertEqual(converter.convert(7), "VⅠⅠ")
+        XCTAssertEqual(converter.convert(7), "VII")
     }
 
     func testEight() {
-        XCTAssertEqual(converter.convert(8), "VⅠⅠⅠ")
+        XCTAssertEqual(converter.convert(8), "VIII")
     }
 
     func testNine() {
-        XCTAssertEqual(converter.convert(9), "ⅠX")
+        XCTAssertEqual(converter.convert(9), "IX")
     }
 
     func testTen() {
@@ -53,19 +53,19 @@ class RomanNumeralsTDDTests: XCTestCase {
     }
 
     func testEleven() {
-        XCTAssertEqual(converter.convert(11), "XⅠ")
+        XCTAssertEqual(converter.convert(11), "XI")
     }
 
     func testTwelve() {
-        XCTAssertEqual(converter.convert(12), "XⅠⅠ")
+        XCTAssertEqual(converter.convert(12), "XII")
     }
 
     func testThirteen() {
-        XCTAssertEqual(converter.convert(13), "XⅠⅠⅠ")
+        XCTAssertEqual(converter.convert(13), "XIII")
     }
 
     func testFourteen() {
-        XCTAssertEqual(converter.convert(14), "XⅠV")
+        XCTAssertEqual(converter.convert(14), "XIV")
     }
 
     func testFifteen() {
@@ -73,19 +73,19 @@ class RomanNumeralsTDDTests: XCTestCase {
     }
 
     func testSixteen() {
-        XCTAssertEqual(converter.convert(16), "XVⅠ")
+        XCTAssertEqual(converter.convert(16), "XVI")
     }
 
     func testSeventeen() {
-        XCTAssertEqual(converter.convert(17), "XVⅠⅠ")
+        XCTAssertEqual(converter.convert(17), "XVII")
     }
 
     func testEighteen() {
-        XCTAssertEqual(converter.convert(18), "XVⅠⅠⅠ")
+        XCTAssertEqual(converter.convert(18), "XVIII")
     }
 
     func testNineteen() {
-        XCTAssertEqual(converter.convert(19), "XⅠX")
+        XCTAssertEqual(converter.convert(19), "XIX")
     }
 
     func testTwinty() {
@@ -93,11 +93,11 @@ class RomanNumeralsTDDTests: XCTestCase {
     }
 
     func testTwentyOne() {
-        XCTAssertEqual(converter.convert(21), "XXⅠ")
+        XCTAssertEqual(converter.convert(21), "XXI")
     }
 
     func testThirtyThree() {
-        XCTAssertEqual(converter.convert(33), "XXXⅠⅠⅠ")
+        XCTAssertEqual(converter.convert(33), "XXXIII")
     }
     
     func testForty() {
@@ -109,6 +109,18 @@ class RomanNumeralsTDDTests: XCTestCase {
     }
 
     func testEightyNine() {
-        XCTAssertEqual(converter.convert(89), "LXXXⅠX")
+        XCTAssertEqual(converter.convert(89), "LXXXIX")
+    }
+
+    func testNinety() {
+        XCTAssertEqual(converter.convert(90), "XC")
+    }
+
+    func testNinetyNine() {
+        XCTAssertEqual(converter.convert(99), "XCIX")
+    }
+
+    func testOneHundred() {
+        XCTAssertEqual(converter.convert(100), "C")
     }
 }
