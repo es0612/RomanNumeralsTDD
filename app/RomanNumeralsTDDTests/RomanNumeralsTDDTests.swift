@@ -7,7 +7,7 @@ class RomanNumeralsTDDTests: XCTestCase {
     override func setUp() {
         converter = DefaultRomanNumeralsConverter()
     }
-    
+
     func testOne() {
         XCTAssertEqual(converter.convert(1), "Ⅰ")
     }
@@ -18,5 +18,9 @@ class RomanNumeralsTDDTests: XCTestCase {
 
     func testThree() {
         XCTAssertEqual(converter.convert(3), "ⅠⅠⅠ")
+    }
+
+    func testFour() {
+        XCTAssertEqual(converter.convert(4), "ⅠV")
     }
 }
