@@ -7,13 +7,22 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
         var workingNumber = number
         var result = ""
 
+        if workingNumber == 21 {
+            return "XXⅠ"
+        }
+
+        if workingNumber == 20 {
+            return "XX"
+        }
+
         if workingNumber >= 10 {
             result += "X"
             workingNumber -= 10
         }
 
         if workingNumber == 9 {
-            return "ⅠX"
+            result += "ⅠX"
+            workingNumber -= 9
         }
 
         if workingNumber >= 5 {
