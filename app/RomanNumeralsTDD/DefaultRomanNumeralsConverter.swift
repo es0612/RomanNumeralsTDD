@@ -7,7 +7,7 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
         var workingNumber = number
         var result = ""
 
-        if workingNumber >= 1000 {
+        while workingNumber >= 1000 {
             result += "M"
             workingNumber -= 1000
         }
