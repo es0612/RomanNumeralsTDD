@@ -8,6 +8,10 @@ class RomanNumeralsTDDTests: XCTestCase {
         converter = DefaultRomanNumeralsConverter()
     }
 
+    func testZero() {
+        XCTAssertEqual(converter.convert(0), "")
+    }
+
     func testOne() {
         XCTAssertEqual(converter.convert(1), "Ⅰ")
     }
