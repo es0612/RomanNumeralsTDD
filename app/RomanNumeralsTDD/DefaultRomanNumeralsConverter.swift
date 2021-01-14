@@ -7,6 +7,17 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
         var workingNumber = number
         var result = ""
 
+
+        if workingNumber >= 50 {
+            result += "L"
+            workingNumber -= 50
+        }
+
+        if workingNumber == 40 {
+            result += "XL"
+            workingNumber -= 40
+        }
+        
         while workingNumber >= 10 {
             result += "X"
             workingNumber -= 10

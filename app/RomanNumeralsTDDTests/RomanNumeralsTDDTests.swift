@@ -99,5 +99,16 @@ class RomanNumeralsTDDTests: XCTestCase {
     func testThirtyThree() {
         XCTAssertEqual(converter.convert(33), "XXXⅠⅠⅠ")
     }
+    
+    func testForty() {
+        XCTAssertEqual(converter.convert(40), "XL")
+    }
 
+    func testFifty() {
+        XCTAssertEqual(converter.convert(50), "L")
+    }
+
+    func testEightyNine() {
+        XCTAssertEqual(converter.convert(89), "LXXXⅠX")
+    }
 }
