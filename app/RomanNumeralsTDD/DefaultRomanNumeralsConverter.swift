@@ -12,7 +12,7 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
             workingNumber -= 10
         }
 
-        if number == 9 {
+        if workingNumber == 9 {
             return "ⅠX"
         }
 
@@ -21,8 +21,9 @@ struct DefaultRomanNumeralsConverter: RomanNumeralsConverter {
             workingNumber -= 5
         }
 
-        if number == 4 {
-            return "ⅠV"
+        if workingNumber == 4 {
+            result += "ⅠV"
+            workingNumber -= 4
         }
 
         while workingNumber > 0 {
